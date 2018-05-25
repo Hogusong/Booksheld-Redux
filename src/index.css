@@ -31,15 +31,15 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 30px;
   padding: 20px;
 }
 
-.container ul {
+.book-list {
   list-style: none;
 }
 
-.container li {
+.book-list li {
   padding: 20px 30px;
   border: 1px gray solid;
   width: 300px;
@@ -47,8 +47,17 @@ body {
   overflow: hidden;
 }
 
-.container li:hover {
+.book-list li:hover {
   background: lightgoldenrodyellow;
+}
+
+.book-list #selected {
+  color: orangered;
+}
+
+.detail {
+  text-align: left;
+  padding: 0 20px;
 }
 
 @keyframes App-logo-spin {
